@@ -1,0 +1,10 @@
+@charset "UTF_8";
+
+{
+    font-family: arial, helvetica, sans-serif; }
+body {
+    background-image: linear-gradient #f05700;
+}
+p {
+   text-align: justify;
+}
