@@ -8,16 +8,46 @@
 </head>
 <body>
     <h1>Exemplo de Formulario</h1>
+    <form action="cadastro.php" method="post">
+    <p>
+        <label for="iest">Estado</label>
+        <select name="est" id="iest">
+            <option value="" selected>--- Escolha ---</option>
+            <optgroup label="Regiao sudeste">
+            <option value="mg">Minas gerais</option>
+            <option value="rj">Rio de janeiro</option>
+            <option value="sp">Sao paulo</option>
+            </optgroup>
 
+            <optgroup label="Regiao nordeste">
+            <option value="ma">Maranhao</option>
+            <option value="pr">Pernambuco</option>
+            <option value="rn">Rio Grande do norte</option>
+            </optgroup>
+        </select>
+    </p>
+    <p>
+        <label for="ipro">Profiçao</label>
+        <input type="text" name="pro" id="ipro" list="lstprof">
+        <datalist id="lstprof">
 
+            <option>Administrador</option>
 
+            <option>contabilista</option>
 
+            <option>Densenvolvedor</option>
 
-
-    
+            <option>Professor</option>
+        </datalist>
+    </p>
+    <p>
+        <label for="imsg">Mensagem</label>
+        <textarea name="msg" id="imsg" cols="30" rows="2"></textarea>
+    </p>
     <p>
         <input type="submit" value="Enviar">
         <input type="reset" value="Limpar">
     </p>
+    </form>
 </body>
 </html>
